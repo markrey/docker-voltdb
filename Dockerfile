@@ -3,7 +3,7 @@ MAINTAINER Andrew Rothstein andrew.rothstein@gmail.com
 
 RUN apt-get update && apt-get install --no-install-recommends -y python ant build-essential curl ccache cmake
 
-ENV VOLTDB_VERSION 6.0
+ENV VOLTDB_VERSION 6.3
 
 RUN curl -L https://github.com/VoltDb/voltdb/archive/voltdb-${VOLTDB_VERSION}.tar.gz | tar zx
 WORKDIR voltdb-voltdb-${VOLTDB_VERSION}
